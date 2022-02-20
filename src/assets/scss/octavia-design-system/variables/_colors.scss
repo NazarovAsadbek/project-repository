@@ -1,0 +1,135 @@
+/*
+  Color Inventory
+*/
+$solid-colors: (
+    "blue": #0081FF,
+    "indigo": #5e5ce6,
+    "purple": #7367F0,
+    "pink": #ff375f,
+    "red": #FF3D57,
+    "orange": #FF8A48,
+    "yellow": #FDBF5E,
+    "green": #09B66D,
+    "slate": #242939,
+    "white": #ffffff
+);
+
+$gradient-colors: (
+  gradient-purple-indigo: (
+    "start-color": #663399,
+    "end-color": #33214b
+  ),
+  gradient-black-blue: (
+    'start-color' : #004e92,
+      'end-color' : #000428
+  ),
+  gradient-black-gray: (
+    'start-color' : #404040,
+      'end-color' : #000000
+  ),
+  gradient-steel-gray: (
+    'start-color' : #616d86,
+      'end-color' : #1F1C2C
+  )
+);
+
+$blue:    map-get($solid-colors, 'blue') !default;
+$dark-blue:    map-get($solid-colors, 'dark-blue') !default;
+$indigo:  map-get($solid-colors, 'indigo') !default;
+$purple:  map-get($solid-colors, 'purple') !default;
+$pink:    map-get($solid-colors, 'pink') !default;
+$red:     map-get($solid-colors, 'red') !default;
+$orange:  map-get($solid-colors, 'orange') !default;
+$yellow:  map-get($solid-colors, 'yellow') !default;
+$green:   map-get($solid-colors, 'green') !default;
+$slate:   map-get($solid-colors, 'slate') !default;
+
+// Generate gray base form purple
+$gray-base: desaturate($blue, 90);
+
+$white:    #fff !default;
+$gray-100: #FAFBFB !default; // 5
+ $grey-200: lighten($gray-base, 28) !default;
+$gray-200: #F2F4F4 !default; // 4
+$gray-300: #E7EDF3 !default; // 3
+$gray-400: #B3C0CE  !default; // 2
+$gray-500: $gray-base !default; 
+$gray-600: #828D99  !default; // muted
+$gray-700: #475F7B !default; // 1
+$gray-800: #304156 !default; // body text
+$gray-900: darken($gray-800, 10) !default;
+
+$black:    darken(desaturate($purple, 50), 40) !default;
+
+
+$primary:       $blue !default;
+$secondary:     $gray-800 !default;
+$success:       $green !default;
+$info:          $indigo !default;
+$warning:       $orange !default;
+$danger:        $red !default;
+$light:         $gray-500 !default;
+$dark:          $gray-900 !default;
+
+
+$theme-colors: (
+  primary: $primary,
+  secondary: $secondary,
+  success: $success,
+  info: $info,
+  warning: $warning,
+  danger: $danger,
+  light: $light,
+  dark: $dark
+) !default;
+
+
+$social-colors: (
+  facebook: rgb(55, 101, 201),
+  google: rgb(236, 65, 44),
+  twitter: rgb(3, 159, 245)
+);
+
+$facebook: map-get($social-colors, 'facebook');
+$google: map-get($social-colors, 'google');
+$twitter: map-get($social-colors, 'twitter');
+
+
+
+/* 
+  Color Design Tokens 
+*/
+$body-bg: $gray-200;
+$card-bg: $white;
+
+$body-color: $gray-800 !default;
+$heading-color: $body-color;
+$heading-semi-dark-color: $gray-800;
+$text-muted-color: $gray-600;
+$text-muted: $gray-600;
+
+$primary-active: darken($primary, 10);
+$primary-dark: darken($primary, 15);
+
+// Acive colors
+$component-active-color: $white !default;
+$component-active-bg: $primary-active !default;
+
+// Background
+$background-light: $gray-200;
+
+// Border
+$border-color: #F0F1F2;
+$border-color-light: rgba($gray-900, .06);
+$border-color-dark: rgba($gray-900, .25);
+$border-color-black: rgba($gray-900, .5);
+
+// Forms
+$input-color: $body-color;
+$label-color: $text-muted-color;
+$input-color-placeholder: $text-muted-color;
+$input-border-color: #E1E5E8;
+
+// hover focus
+$hover-background: $gray-200;
+$active-background: $background-light;

@@ -1,0 +1,32 @@
+@function rem($size) {
+  $remSize: $size / 16px;
+  //Default font size on html element is 100%, equivalent to 16px;
+  @return #{$remSize}rem;
+}
+
+$font-family-heading: 'Archivo', sans-serif;
+$font-family-base: 'Archivo', sans-serif;
+$font-family-code: 'Archivo', sans-serif;
+
+
+$font-size-base: 0.875rem;
+$font-weight-base: 400;
+
+$line-height-base: 1.5;
+$line-height-text: 1.7;
+$line-height-heading: 1.25;
+
+$letter-spacing-base: rem(0.3px);
+$letter-spacing-title: rem(0.5px);
+
+$spacer: 1rem !default;
+
+// Acive colors
+$component-active-color: $white !default;
+$component-active-bg: $primary-active !default;
+
+// Style anchor elements.
+$link-color: $primary !default;
+$link-decoration: none !default;
+$link-hover-color: $primary-active !default;
+$link-hover-decoration: none !default;

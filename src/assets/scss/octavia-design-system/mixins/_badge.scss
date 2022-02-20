@@ -1,0 +1,124 @@
+@mixin badge-variant($bg) {
+  color: $white;
+  background-color: $bg;
+  
+  &[href] {
+    color: $white;
+    @include hover-focus {
+      background-color: darken($bg, 10%);
+    }
+  }
+}
+
+@mixin circle-variant($size) {
+    border-radius: 50%;
+    width: $size;
+    height: $size;
+    line-height: $size;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // text-transform: capitalize;
+    padding: 0px !important;
+  
+}
+
+@mixin badge-colors() {
+  @each $color, $value in $theme-colors {
+    .badge-#{$color} {
+      @include badge-variant($value);
+    }
+  }
+}
+
+@mixin badge-circles() {
+  @each $color, $value in $theme-colors {
+    .badge-circle-#{$color} {
+      @include badge-variant($value);
+      @include circle-variant(40px);
+    }
+  }
+}
+
+
+
+//opacity variant
+@mixin opacity-variant($size) {
+  width: $size;
+  height: $size;
+  line-height: $size;
+  border-radius: 8px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  padding: 0px !important;
+  // background-color: hsla(0,0%,100%,.1);
+}
+
+@mixin badge-opacity(){
+  @each $color, $value in $theme-colors{
+    .badge-opacity-#{$color}{
+      &.sm{
+        width: 15px;
+        height: 15px;
+        opacity: 1;
+        border-radius: 20px;
+        i{
+          font-size: 11px;
+        }
+      }
+      @include badge-variant(rgba($value, .17));
+      color:$value;
+      @include opacity-variant(40px);
+      i{
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+//brand
+@mixin badge-brand-variant($size,$bg){
+  width: $size;
+  height: $size;
+  line-height: $size;
+  border-radius: 8px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px !important;
+  background-color: $bg;
+  img{
+    height: 20px;
+    width: auto;
+  }
+  
+}
+
+@mixin badge-brand(){
+  .badge-brand{
+    @include badge-brand-variant(52px, rgba(24,42,136,.08));
+  }
+}
+
+
+
+// avatar 
+@mixin avatar-variant(){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+@mixin badge-avatar(){
+  @each $color, $value in $theme-colors{
+    .badge-avatar-#{$color}{
+      @include badge-variant($value);
+      @include avatar-variant();
+    }
+  }
+}

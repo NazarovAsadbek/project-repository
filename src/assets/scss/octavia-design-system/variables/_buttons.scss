@@ -1,0 +1,41 @@
+$button-font-weight: $font-weight-normal        !default;
+$button-font-size: rem(14px)                     !default;
+$button-text-transform: none             !default;
+$button-sm-font-size: rem(10px)                    !default;
+$button-lg-font-size: rem(14px)                    !default;
+$button-letter-specing: .3px                  !default;
+
+$button-padding: rem(8.5px) rem(24px);
+$button-sm-padding: rem(5px) rem(14px);
+$button-sm-font-size: rem(12px);
+$button-lg-padding: rem(10.5px) rem(30px);
+
+$button-lg-font-size: rem(18px);
+
+$button-semi-rounded-radius: rem(10px);
+$button-rounded-radius: rem(40px);
+
+// Icon button vars
+$button-icon-padding: rem(12px) rem(12px);
+$button-icon-margin: rem(7px);
+
+$button-icon-size: $button-font-size;
+$button-icon-sm-size: rem(12px);
+$button-icon-lg-size: rem(16px);
+$button-icon-sm-padding: rem(6.5px) rem(20px);
+$button-icon-lg-padding: rem(18px) rem(36px);
+
+// Font awesome icons
+$button-fa-icon-font-size: rem(16px);
+$button-fa-icon-sm-font-size: rem(12px); 
+$button-fa-icon-lg-font-size: rem(18px); 
+
+
+
+// Button Link
+$button-link-padding:                   .2rem .3rem;
+$button-link-bg:                        transparent !default;
+$button-link-border-width:              rem(2px) !default;
+
+
+$bmd-btn-color: $body-color !default;

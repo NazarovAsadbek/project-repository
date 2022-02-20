@@ -1,0 +1,9 @@
+{
+  "dashboard": "Today",
+  "dashboardItems": {
+    "versionOne": "Today",
+    "versionTwo": "Version Two",
+    "versionThree": "Version Three",
+    "versionFour": "Version Four"
+  }
+}

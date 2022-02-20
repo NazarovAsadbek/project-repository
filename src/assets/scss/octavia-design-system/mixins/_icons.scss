@@ -1,0 +1,14 @@
+@mixin icons {
+  .icon,
+  i,
+  [class^="ti-"],
+  [class*=" ti-"] {
+    @content;
+  }
+}
+
+@mixin material-icons {
+  .material-icons {
+    @content;
+  }   
+}

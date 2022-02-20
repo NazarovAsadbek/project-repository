@@ -1,0 +1,172 @@
+div.theme--dark {
+  // large sidebar
+  .v-navigation-drawer {
+    background-color: #272727;
+  }
+
+  .container.horizontal-container {
+    background: #121212;
+  }
+  .card-title,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $white;
+  }
+  a.eg-white-tab {
+    background-color: #1e1e1e !important;
+  }
+  .bg-off-white,
+  .grey.lighten-4 {
+    background-color: #1e1e1e !important;
+  }
+
+  // header dropdown plugin
+  .vnb {
+    background: transparent !important;
+
+    &__menu-options {
+      margin-top: 3px !important;
+      &__option {
+        &__link {
+          color: #fff;
+          &:focus {
+            outline: none;
+            border: 1px solid none;
+          }
+          &:hover {
+            color: #0081ff;
+
+            .vnb__menu-options__option__arrow {
+              fill: #0081ff;
+            }
+          }
+
+          &__icon {
+            svg {
+              fill: #0081ff !important;
+            }
+          }
+        }
+      }
+    }
+
+    &__sub-menu-options {
+      background-color: #1e1e1e;
+      border-radius: 0;
+      &__option {
+        &__link {
+          color: #fff !important;
+
+          &:focus {
+            outline: none;
+            border: 1px solid none;
+          }
+
+          &:hover {
+            background-color: #4a5568 !important;
+            color: #0081ff !important;
+          }
+        }
+      }
+    }
+  }
+  svg.vnb__menu-options__option__arrow {
+    fill: #fff;
+  }
+  .vnb__collapse-button {
+    &:focus {
+      border: 1px solid none;
+      outline: none;
+    }
+    &:after {
+      content: "\F035C";
+      font-size: 25px;
+      font-weight: 600;
+      font-family: "Material Design Icons";
+    }
+    svg {
+      display: none !important;
+    }
+  }
+
+  .vnb__popup {
+    max-height: 80vh;
+    overflow-x: hidden;
+    overflow-y: scroll !important;
+    .vnb__popup__top__close-button {
+      &:focus {
+        border: 1px solid none;
+        outline: none;
+      }
+      top: 20px;
+      right: -33px;
+      svg {
+        fill: #fff !important;
+      }
+    }
+  }
+
+  //Apps
+  //apps-wrapper
+  .apps-wrapper {
+    .app-sidebar-header {
+      background-color: #1e1e1e !important;
+    }
+    .app-sidebar-scroll {
+      background-color: #1e1e1e !important;
+    }
+    .app-footer {
+      background-color: #1e1e1e !important;
+    }
+    .app-header {
+      background-color: #1e1e1e !important;
+      border-bottom: 1px solid #1e1e1e !important;
+    }
+  }
+
+  //apps -> filemanager
+  .eg-filemanager {
+    background-color: #1e1e1e;
+  }
+
+  //apps -> todo
+  .eg-todo-item {
+    background-color: #121212 !important;
+  }
+
+  // apexchart
+  .apexcharts-xaxis-label {
+    fill: #fff;
+  }
+  .apexcharts-yaxis-label {
+    fill: #fff;
+  }
+
+  .apexcharts-legend-text {
+    color: #fff !important;
+  }
+  .apexcharts-datalabels-group {
+    text {
+      fill: #fff !important;
+    }
+  }
+
+  // apexchart---->tooltip
+  .apexcharts-tooltip {
+    color: #fff;
+    background: rgba(30, 30, 30, 0.8);
+    border: 1px solid #000;
+    .apexcharts-tooltip-title {
+      background: rgba(0, 0, 0, 0.7);
+      border-bottom: 1px solid #333;
+    }
+  }
+
+  // end-tooltip
+
+  //end-apexchart
+}

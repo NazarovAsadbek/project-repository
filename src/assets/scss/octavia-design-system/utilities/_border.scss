@@ -1,0 +1,18 @@
+@include border-colors();
+.ul-divider {
+  display: block;
+  margin: 0;
+  border:0.5px solid $gray-300
+}
+
+.ul-divider-2{
+  width: 100%;
+  border:0.5px solid $gray-300
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+.cursor-move{
+  cursor: move;
+}

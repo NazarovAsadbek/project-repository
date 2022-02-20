@@ -1,0 +1,158 @@
+<template>
+  <v-row>
+    <v-col
+      cols="12"
+      md="6"
+    >
+      <base-card>
+        <v-card-title>Usage</v-card-title>
+        <v-card-text>
+          <v-treeview :items="items"></v-treeview>
+        </v-card-text>
+      </base-card>
+    </v-col>
+    <v-col
+      cols="12"
+      md="6"
+    >
+      <base-card class="h-full">
+        <v-card-title>Dense</v-card-title>
+        <v-card-text>
+          <v-treeview
+            dense
+            :items="items"
+          ></v-treeview>
+        </v-card-text>
+      </base-card>
+    </v-col>
+    <v-col
+      cols="12"
+      md="6"
+    >
+      <base-card class="h-full">
+        <v-card-title>Checkbox Color</v-card-title>
+        <v-card-text>
+          <v-treeview
+            selectable
+            selected-color="red"
+            :items="items"
+          ></v-treeview>
+        </v-card-text>
+      </base-card>
+    </v-col>
+    <v-col
+      cols="12"
+      md="6"
+    >
+      <base-card class="h-full">
+        <v-card-title>Color</v-card-title>
+        <v-card-text>
+          <v-treeview
+            activatable
+            color="warning"
+            :items="items"
+          ></v-treeview>
+        </v-card-text>
+      </base-card>
+    </v-col>
+    <v-col
+      cols="12"
+      md="6"
+    >
+      <base-card class="h-full">
+        <v-card-title>Rounded</v-card-title>
+        <v-card-text>
+          <v-treeview
+            rounded
+            hoverable
+            activatable
+            :items="items"
+          ></v-treeview>
+        </v-card-text>
+      </base-card>
+    </v-col>
+  </v-row>
+</template>
+<script>
+  export default {
+   
+    metaInfo: {
+      // title will be injected into parent titleTemplate
+      title: "Treeview",
+    },
+    data: () => ({
+      items: [
+        {
+          id: 1,
+          name: 'Applications :',
+          children: [
+            { id: 2, name: 'Calendar : app' },
+            { id: 3, name: 'Chrome : app' },
+            { id: 4, name: 'Webstorm : app' },
+          ],
+        },
+        {
+          id: 5,
+          name: 'Documents :',
+          children: [
+            {
+              id: 6,
+              name: 'vuetify :',
+              children: [
+                {
+                  id: 7,
+                  name: 'src :',
+                  children: [
+                    { id: 8, name: 'index : ts' },
+                    { id: 9, name: 'bootstrap : ts' },
+                  ],
+                },
+              ],
+            },
+            {
+              id: 10,
+              name: 'material2 :',
+              children: [
+                {
+                  id: 11,
+                  name: 'src :',
+                  children: [
+                    { id: 12, name: 'v-btn : ts' },
+                    { id: 13, name: 'v-card : ts' },
+                    { id: 14, name: 'v-window : ts' },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        {
+          id: 15,
+          name: 'Downloads :',
+          children: [
+            { id: 16, name: 'October : pdf' },
+            { id: 17, name: 'November : pdf' },
+            { id: 18, name: 'Tutorial : html' },
+          ],
+        },
+        {
+          id: 19,
+          name: 'Videos :',
+          children: [
+            {
+              id: 20,
+              name: 'Tutorials :',
+              children: [
+                { id: 21, name: 'Basic layouts : mp4' },
+                { id: 22, name: 'Advanced techniques : mp4' },
+                { id: 23, name: 'All about app : dir' },
+              ],
+            },
+            { id: 24, name: 'Intro : mov' },
+            { id: 25, name: 'Conference introduction : avi' },
+          ],
+        },
+      ],
+    }),
+  }
+</script>

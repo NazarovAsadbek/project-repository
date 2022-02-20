@@ -1,0 +1,27 @@
+/*
+  Octavia Design System by UI Lib
+*/
+/*
+ * ============================
+ * File: Octavia-design-system.scss
+ * Project: Octavia-Admin
+ * File Created: Monday, 13th April 2020 2:02:52 am
+ * Author:UILIB
+ * AuthorUrl:https://ui-lib.com/
+ * -----
+ * Last Modified: Thursday, 7th May 2020 9:24:20 pm
+ * Modified By: naime hossain (naime.hossain93@gmail.com)
+ * -----
+ * Copyright 2020 - 2021 UILIB, UILIB
+ * ============================
+ */
+
+@import "variables/variables";
+@import "functions/functions";
+@import "mixins/mixins";
+@import "reboot";
+
+@import "utilities/utilities";
+
+ @import "views/dark";
+ 
