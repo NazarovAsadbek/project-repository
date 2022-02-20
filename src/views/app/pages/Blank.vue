@@ -1,14 +1,22 @@
 <template>
-  <v-img
-    src="https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-mediumSquareAt3X-v2.jpg"
-    style="width: 100% !important;"
-  ></v-img>
+  <div class="mainContent">
+    <div class="pageBody">
+      <h1>Empty</h1>
+    </div>
+  </div>
 </template>
+
 
 <script>
   export default {
     name: 'Blank',
 
     data: () => ({}),
+    mounted () {
+    },
   }
 </script>
+
+<style scoped lang="css">
+
+</style>

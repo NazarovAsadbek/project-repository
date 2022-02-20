@@ -54,6 +54,18 @@ const router = new Router({
               path: 'blank',
               component: () => import('@/views/app/pages/Blank'),
             },
+            {
+              path: 'css',
+              component: () => import('@/views/app/pages/css/index'),
+              redirect: '/app/pages/css/animated-circular-menu-vanilla',
+              children: [
+                {
+                  path: 'animated-circular-menu-vanilla',
+                  name: 'Animated-circular-menu-vanilla',
+                  component: () => import('@/views/app/pages/css/Animated-circular-menu-vanilla'),
+                },
+              ],
+            },
           ],
         },
       ],

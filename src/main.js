@@ -20,6 +20,7 @@ import store from './store'
 
 import vuetify from './plugins/vuetify'
 import './plugins'
+import './assets/css/main.css'
 
 import octaviaKit from '@/plugins/octavia.kit'
 
@@ -31,6 +32,7 @@ import octaviaKit from '@/plugins/octavia.kit'
 
 Vue.use(octaviaKit)
 Vue.config.productionTip = false
+Vue.config.ignoredElements = [/^ion-/]
 // if (process.env.NODE_ENV === "development") {
 //   makeServer();
 // }
