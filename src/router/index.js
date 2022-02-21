@@ -64,6 +64,11 @@ const router = new Router({
                   name: 'Animated-circular-menu-vanilla',
                   component: () => import('@/views/app/pages/css/Animated-circular-menu-vanilla'),
                 },
+                {
+                  path: 'awesome-animejs-background',
+                  name: 'Awesome-animejs-background',
+                  component: () => import('@/views/app/pages/css/Awesome-animejs-background'),
+                },
               ],
             },
           ],

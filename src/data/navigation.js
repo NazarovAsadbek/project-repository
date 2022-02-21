@@ -35,6 +35,11 @@ export const items = [
         icon: 'mdi-circle-medium',
         to: 'animated-circular-menu-vanilla',
       },
+      {
+        title: 'Anime Js background',
+        icon: 'mdi-circle-medium',
+        to: 'awesome-animejs-background',
+      },
     ],
   },
 

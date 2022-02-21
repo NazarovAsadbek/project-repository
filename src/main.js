@@ -19,6 +19,7 @@ import router from './router'
 import store from './store'
 
 import vuetify from './plugins/vuetify'
+import VueAnime from 'vue-animejs';
 import './plugins'
 import './assets/css/main.css'
 
@@ -31,6 +32,7 @@ import octaviaKit from '@/plugins/octavia.kit'
 // Vue.component('apexchart', VueApexCharts);
 
 Vue.use(octaviaKit)
+Vue.use(VueAnime)
 Vue.config.productionTip = false
 Vue.config.ignoredElements = [/^ion-/]
 // if (process.env.NODE_ENV === "development") {
