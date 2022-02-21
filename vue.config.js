@@ -17,7 +17,8 @@ module.exports = {
       warnings: false,
       errors: true,
     },
-    publicPath: '/awesome-projects/',
+    publicPath: '/project-repository/',
+    // publicPath: '/',
     quiet: true,
     watchOptions: {
       poll: false,
