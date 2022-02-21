@@ -70,6 +70,11 @@ export const items = [
         icon: 'mdi-circle-medium',
         to: 'animated-circular-menu-vanilla',
       },
+      {
+        title: 'Rocket animation',
+        icon: 'mdi-circle-medium',
+        to: 'Rocket-animation',
+      },
     ],
   },
 

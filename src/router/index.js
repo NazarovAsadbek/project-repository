@@ -99,6 +99,11 @@ const router = new Router({
                   name: 'Magic-menu-indicator',
                   component: () => import('@/views/app/pages/css/Magic-menu-indicator'),
                 },
+                {
+                  path: 'rocket-animation',
+                  name: 'Rocket-animation',
+                  component: () => import('@/views/app/pages/css/Rocket-animation'),
+                },
               ],
             },
           ],
