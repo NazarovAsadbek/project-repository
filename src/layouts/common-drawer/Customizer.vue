@@ -267,102 +267,109 @@
   </div>
 </template>
 <script>
-import { mapGetters, mapActions } from "vuex";
-export default {
-  data() {
-    return {
-      themeColor: "#0081FF",
-      colors: [
-        "primary",
-        "dark",
-        "white",
-        "black",
-        "secondary",
-        "success",
-        "info",
-        "warning",
-        "danger"
-      ],
-      themeColors: [
-        "#0081FF",
-        "#242939",
+  import { mapGetters, mapActions } from 'vuex'
 
-        "#304156",
-        "#09B66D",
-        "#5e5ce6",
-        "#FF8A48",
-        "#FF3D57"
-      ],
-      customizer: null,
-      items: [
-        { title: "Home", icon: "dashboard" },
-        { title: "About", icon: "question_answer" }
-      ]
-    };
-  },
-  methods: {
-    ...mapActions([
-      "changeThemeLayout",
-      "changeThemeDarkMode",
-      "changeVerticalSidebarDrawerColor",
-      "changeAppBarColor"
-    ]),
-    changeLayout(layout) {
-      if (
-        layout == "VerticalCompactSidebar" ||
-        layout == "VerticalWhiteSidebar"
-      ) {
-        this.changeSidebarColor("white");
-      } else {
-        this.changeSidebarColor("dark");
-      }
-      this.changeThemeLayout(layout);
-    },
-    changeDarkMode(data) {
-      // this.changeThemeDarkMode(data);
-      this.$vuetify.theme.dark = data;
-    },
-    changeThemeRtlMode(data) {
-      // this.changeThemeDarkMode(data);
-      this.$vuetify.rtl = data;
-    },
-    changeThemePrimaryColor(data) {
-      this.$vuetify.theme.themes.light.primary = data;
-    },
-    changeSidebarColor(data) {
-      this.changeVerticalSidebarDrawerColor(data);
-    },
-    appBarColorChange(data) {
-      this.changeAppBarColor(data);
-    }
-  },
+  export default {
+    data () {
+      return {
+        themeColor: '#0081FF',
+        colors: [
+          'primary',
+          'dark',
+          'white',
+          'black',
+          'secondary',
+          'success',
+          'info',
+          'warning',
+          'danger',
+        ],
+        themeColors: [
+          '#0081FF',
+          '#242939',
 
-  computed: {
-    ...mapGetters(["getThemeMode"]),
-    changePrimaryColor: {
-      get() {
-        return this.themeColor;
-      },
-      set(v) {
-        this.changeThemePrimaryColor(v);
+          '#304156',
+          '#09B66D',
+          '#5e5ce6',
+          '#FF8A48',
+          '#FF3D57',
+        ],
+        customizer: null,
+        items: [
+          {
+            title: 'Home',
+            icon: 'dashboard',
+          },
+          {
+            title: 'About',
+            icon: 'question_answer',
+          },
+        ],
       }
     },
-    SidebarColor: {
-      get() {
-        return "#FF00FF";
+    methods: {
+      ...mapActions([
+        'changeThemeLayout',
+        'changeThemeDarkMode',
+        'changeVerticalSidebarDrawerColor',
+        'changeAppBarColor',
+      ]),
+      changeLayout (layout) {
+        if (
+          layout == 'VerticalCompactSidebar' ||
+          layout == 'VerticalWhiteSidebar'
+        ) {
+          this.changeSidebarColor('white')
+        } else {
+          this.changeSidebarColor('dark')
+        }
+        this.changeThemeLayout(layout)
       },
-      set(v) {
-        this.changeSidebarColor(v);
-      }
+      changeDarkMode (data) {
+        // this.changeThemeDarkMode(data);
+        this.$vuetify.theme.dark = data
+      },
+      changeThemeRtlMode (data) {
+        // this.changeThemeDarkMode(data);
+        this.$vuetify.rtl = data
+      },
+      changeThemePrimaryColor (data) {
+        this.$vuetify.theme.themes.light.primary = data
+      },
+      changeSidebarColor (data) {
+        this.changeVerticalSidebarDrawerColor(data)
+      },
+      appBarColorChange (data) {
+        this.changeAppBarColor(data)
+      },
     },
-    headerColor: {
-      get() {
-        return this.themeColor;
+
+    computed: {
+      ...mapGetters(['getThemeMode']),
+      changePrimaryColor: {
+        get () {
+          return this.themeColor
+        },
+        set (v) {
+          this.changeThemePrimaryColor(v)
+        },
       },
-      set(v) {
-        this.appBarColorChange(v);
-      }
-    }
+      SidebarColor: {
+        get () {
+          return '#FF00FF'
+        },
+        set (v) {
+          this.changeSidebarColor(v)
+        },
+      },
+      headerColor: {
+        get () {
+          return this.themeColor
+        },
+        set (v) {
+          this.appBarColorChange(v)
+        },
+      },
+    },
   }
-};
 </script>

@@ -2,17 +2,13 @@
   <div>
     <v-navigation-drawer
       v-model="getThemeMode.verticalCompactSidebarDrawer"
-      :color="
-                $vuetify.theme.dark
-                    ? 'dark'
-                    : getThemeMode.verticalSidebarDrawerColor
-            "
+      color="#272727"
       :dark="
                 getThemeMode.verticalSidebarDrawerColor != 'white'
                     ? true
                     : false
             "
-      width="300px"
+      width="350px"
       app
       mobile-breakpoint="1120"
       class="shadow-sm rounded-r-md"
@@ -26,7 +22,7 @@
           min-width="70"
           max-width="70"
           max-height="100%"
-          color="dark"
+          color="#1E1E1E"
           tile
           dark
         >
@@ -136,7 +132,7 @@
           class="h-100 rtl-ps-none ps scroll grow"
           style="height: 100%"
         >
-          <v-list dense nav class="grow pa-0 pt-2" max-width="230">
+          <v-list dense nav class="grow pa-0 pt-2" max-width="280">
             <div
               class="d-flex justify-center flex-column"
               height="100"
@@ -173,7 +169,7 @@
             </div>
           </v-list>
 
-          <v-list class="grow" max-width="230">
+          <v-list class="grow" max-width="280">
             <template v-for="(item, i) in computedItems">
               <base-item-group
                 v-if="item.children"
@@ -197,7 +193,7 @@
       height="100%"
       temporary
       floating
-      width="300"
+      width="350"
     >
       <user-drawer>
         <template v-slot:userDrawerCloseButton>
@@ -227,7 +223,7 @@
       height="100%"
       temporary
       floating
-      width="300"
+      width="350"
     >
       <search-drawer>
         <template v-slot:searchDrawerCloseButton>
