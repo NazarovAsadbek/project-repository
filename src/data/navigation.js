@@ -60,6 +60,16 @@ export const items = [
         icon: 'mdi-circle-medium',
         to: 'Email-vanila-form',
       },
+      {
+        title: 'Neumorphism css clock',
+        icon: 'mdi-circle-medium',
+        to: 'Neumorphism-css-clock',
+      },
+      {
+        title: 'Magic menu indicator',
+        icon: 'mdi-circle-medium',
+        to: 'Magic-menu-indicator',
+      },
     ],
   },
 

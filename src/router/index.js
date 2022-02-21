@@ -89,6 +89,16 @@ const router = new Router({
                   name: 'Email-vanila-form',
                   component: () => import('@/views/app/pages/css/Email-vanila-form'),
                 },
+                {
+                  path: 'neumorphism-css-clock',
+                  name: 'Neumorphism-css-clock',
+                  component: () => import('@/views/app/pages/css/Neumorphism-css-clock'),
+                },
+                {
+                  path: 'magic-menu-indicator',
+                  name: 'Magic-menu-indicator',
+                  component: () => import('@/views/app/pages/css/Magic-menu-indicator'),
+                },
               ],
             },
           ],
