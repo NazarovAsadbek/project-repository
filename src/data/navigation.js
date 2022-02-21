@@ -36,6 +36,11 @@ export const items = [
         to: 'animated-circular-menu-vanilla',
       },
       {
+        title: 'Awesome dots',
+        icon: 'mdi-circle-medium',
+        to: 'Awesome-dots',
+      },
+      {
         title: 'AnimeJs background',
         icon: 'mdi-circle-medium',
         to: 'awesome-animejs-background',
@@ -44,6 +49,16 @@ export const items = [
         title: 'Claymorphism list',
         icon: 'mdi-circle-medium',
         to: 'Claymorphism-css-elements',
+      },
+      {
+        title: 'Claymorphism login',
+        icon: 'mdi-circle-medium',
+        to: 'Claymorphism-login-form',
+      },
+      {
+        title: 'Email vanila input',
+        icon: 'mdi-circle-medium',
+        to: 'Email-vanila-form',
       },
     ],
   },

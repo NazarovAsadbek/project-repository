@@ -74,6 +74,21 @@ const router = new Router({
                   name: 'Claymorphism-css-elements',
                   component: () => import('@/views/app/pages/css/Claymorphism-css-elements'),
                 },
+                {
+                  path: 'claymorphism-login-form',
+                  name: 'Claymorphism-login-form',
+                  component: () => import('@/views/app/pages/css/Claymorphism-login-form'),
+                },
+                {
+                  path: 'awesome-dots',
+                  name: 'Awesome-dots',
+                  component: () => import('@/views/app/pages/css/Awesome-dots'),
+                },
+                {
+                  path: 'email-vanila-form',
+                  name: 'Email-vanila-form',
+                  component: () => import('@/views/app/pages/css/Email-vanila-form'),
+                },
               ],
             },
           ],
