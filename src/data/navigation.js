@@ -36,9 +36,14 @@ export const items = [
         to: 'animated-circular-menu-vanilla',
       },
       {
-        title: 'Anime Js background',
+        title: 'AnimeJs background',
         icon: 'mdi-circle-medium',
         to: 'awesome-animejs-background',
+      },
+      {
+        title: 'Claymorphism list',
+        icon: 'mdi-circle-medium',
+        to: 'Claymorphism-css-elements',
       },
     ],
   },

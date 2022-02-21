@@ -69,6 +69,11 @@ const router = new Router({
                   name: 'Awesome-animejs-background',
                   component: () => import('@/views/app/pages/css/Awesome-animejs-background'),
                 },
+                {
+                  path: 'claymorphism-css-elements',
+                  name: 'Claymorphism-css-elements',
+                  component: () => import('@/views/app/pages/css/Claymorphism-css-elements'),
+                },
               ],
             },
           ],
