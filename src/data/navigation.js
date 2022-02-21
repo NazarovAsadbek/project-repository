@@ -31,19 +31,19 @@ export const items = [
     group: 'pages/css',
     children: [
       {
-        title: 'Vanila circular menu',
-        icon: 'mdi-circle-medium',
-        to: 'animated-circular-menu-vanilla',
-      },
-      {
-        title: 'Awesome dots',
-        icon: 'mdi-circle-medium',
-        to: 'Awesome-dots',
-      },
-      {
         title: 'AnimeJs background',
         icon: 'mdi-circle-medium',
         to: 'awesome-animejs-background',
+      },
+      {
+        title: 'Magic menu indicator',
+        icon: 'mdi-circle-medium',
+        to: 'Magic-menu-indicator',
+      },
+      {
+        title: 'Neumorphism css clock',
+        icon: 'mdi-circle-medium',
+        to: 'Neumorphism-css-clock',
       },
       {
         title: 'Claymorphism list',
@@ -61,14 +61,14 @@ export const items = [
         to: 'Email-vanila-form',
       },
       {
-        title: 'Neumorphism css clock',
+        title: 'Awesome dots',
         icon: 'mdi-circle-medium',
-        to: 'Neumorphism-css-clock',
+        to: 'Awesome-dots',
       },
       {
-        title: 'Magic menu indicator',
+        title: 'Vanila circular menu',
         icon: 'mdi-circle-medium',
-        to: 'Magic-menu-indicator',
+        to: 'animated-circular-menu-vanilla',
       },
     ],
   },

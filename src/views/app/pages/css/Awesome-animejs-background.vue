@@ -6,7 +6,7 @@
         <img src="@/assets/images/moon.png" alt="stars" id="moon">
         <img src="@/assets/images/mountains_behind.png" alt="mountains_behind" id="mountains_behind">
         <h2 id="text">Anime <span>JS</span></h2>
-        <a href="#" id="btn">Play</a>
+        <a href="#" id="btn">Click me</a>
         <img src="@/assets/images/mountains_front.png" alt="mountains_front" id="mountains_front">
       </section>
     </div>
