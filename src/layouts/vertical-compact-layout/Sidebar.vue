@@ -32,7 +32,7 @@
                             wheelPropagation: false
                         }"
             class="h-100 rtl-ps-none ps scroll grow d-flex flex-column align-center justify-space-between"
-            style="height: 100%"
+            style="height: 100vh !important;"
           >
             <div class="d-flex flex-column align-center">
               <v-list dense nav class="px-0">
@@ -132,7 +132,7 @@
           class="h-100 rtl-ps-none ps scroll grow"
           style="height: 100%"
         >
-          <v-list dense nav class="grow pa-0 pt-2" max-width="280">
+          <v-list dense nav class="grow pa-0 pt-2" width="280">
             <div
               class="d-flex justify-center flex-column"
               height="100"
@@ -169,7 +169,7 @@
             </div>
           </v-list>
 
-          <v-list class="grow" max-width="280">
+          <v-list class="grow" width="280">
             <template v-for="(item, i) in computedItems">
               <base-item-group
                 v-if="item.children"

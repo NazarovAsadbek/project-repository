@@ -38,7 +38,7 @@ const router = new Router({
       path: '/',
       component: () => import('@/views/app/Index'),
       // beforeEnter: authenticate,
-      redirect: '/app/pages/Blank',
+      redirect: '/app/pages/css/neumorphism-css-clock',
 
       children: [
         // {
@@ -57,7 +57,7 @@ const router = new Router({
             {
               path: 'css',
               component: () => import('@/views/app/pages/css/index'),
-              redirect: '/app/pages/css/animated-circular-menu-vanilla',
+              redirect: '/app/pages/css/neumorphism-css-clock',
               children: [
                 {
                   path: 'animated-circular-menu-vanilla',
