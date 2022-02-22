@@ -31,16 +31,6 @@ export const items = [
     group: 'pages/css',
     children: [
       {
-        title: 'AnimeJs background',
-        icon: 'mdi-circle-medium',
-        to: 'awesome-animejs-background',
-      },
-      {
-        title: 'Magic menu indicator',
-        icon: 'mdi-circle-medium',
-        to: 'Magic-menu-indicator',
-      },
-      {
         title: 'Neumorphism css clock',
         icon: 'mdi-circle-medium',
         to: 'Neumorphism-css-clock',
@@ -82,12 +72,17 @@ export const items = [
     title: 'JavaScript',
     icon: 'mdi-language-javascript',
     color: 'yellow',
-    group: 'pages',
+    group: 'pages/js',
     children: [
       {
-        title: 'Blank Page',
+        title: 'AnimeJs background',
         icon: 'mdi-circle-medium',
-        to: 'blank',
+        to: 'awesome-animejs-background',
+      },
+      {
+        title: 'Magic menu indicator',
+        icon: 'mdi-circle-medium',
+        to: 'Magic-menu-indicator',
       },
     ],
   },

@@ -15,6 +15,7 @@
       floating
       height="100vh"
       :right="$vuetify.rtl"
+      style="z-index: 1002"
     >
       <v-row class="fill-height flex-row flex ma-0" no-gutters>
         <v-card
@@ -132,7 +133,7 @@
           class="h-100 rtl-ps-none ps scroll grow"
           style="height: 100%"
         >
-          <v-list dense nav class="grow pa-0 pt-2" width="280">
+          <v-list dense nav class="grow pa-0 pt-2" min-width="250" max-width="280">
             <div
               class="d-flex justify-center flex-column"
               height="100"
@@ -169,7 +170,7 @@
             </div>
           </v-list>
 
-          <v-list class="grow" width="280">
+          <v-list class="grow" min-width="250" max-width="280">
             <template v-for="(item, i) in computedItems">
               <base-item-group
                 v-if="item.children"

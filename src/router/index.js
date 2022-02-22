@@ -65,11 +65,6 @@ const router = new Router({
                   component: () => import('@/views/app/pages/css/Animated-circular-menu-vanilla'),
                 },
                 {
-                  path: 'awesome-animejs-background',
-                  name: 'Awesome-animejs-background',
-                  component: () => import('@/views/app/pages/css/Awesome-animejs-background'),
-                },
-                {
                   path: 'claymorphism-css-elements',
                   name: 'Claymorphism-css-elements',
                   component: () => import('@/views/app/pages/css/Claymorphism-css-elements'),
@@ -95,14 +90,26 @@ const router = new Router({
                   component: () => import('@/views/app/pages/css/Neumorphism-css-clock'),
                 },
                 {
-                  path: 'magic-menu-indicator',
-                  name: 'Magic-menu-indicator',
-                  component: () => import('@/views/app/pages/css/Magic-menu-indicator'),
-                },
-                {
                   path: 'rocket-animation',
                   name: 'Rocket-animation',
                   component: () => import('@/views/app/pages/css/Rocket-animation'),
+                },
+              ],
+            },
+            {
+              path: 'js',
+              component: () => import('@/views/app/pages/javascript/index'),
+              redirect: '/app/pages/js/awesome-animejs-background',
+              children: [
+                {
+                  path: 'awesome-animejs-background',
+                  name: 'Awesome-animejs-background',
+                  component: () => import('@/views/app/pages/javascript/Awesome-animejs-background'),
+                },
+                {
+                  path: 'magic-menu-indicator',
+                  name: 'Magic-menu-indicator',
+                  component: () => import('@/views/app/pages/javascript/Magic-menu-indicator'),
                 },
               ],
             },

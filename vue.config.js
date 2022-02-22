@@ -1,7 +1,4 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/project-repository/'
-    : '/',
   pages: {
     index: {
       entry: 'src/main.js',
