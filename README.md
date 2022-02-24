@@ -1,8 +1,5 @@
 # Awesome html,css,javascript elements
 
-## This course consists of 5 modules:
-
-
 ## Start project 
 ```
 yarn install
