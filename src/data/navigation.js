@@ -80,6 +80,11 @@ export const items = [
         icon: 'mdi-circle-medium',
         to: 'social-media',
       },
+      {
+        title: 'Creative-menu-animations',
+        icon: 'mdi-circle-medium',
+        to: 'creative-menu-animations',
+      },
     ],
   },
 

@@ -109,6 +109,11 @@ const router = new Router({
                   name: 'Glowing-social-media-icons',
                   component: () => import('@/views/app/pages/css/Glowing-social-media-icons'),
                 },
+                {
+                  path: 'creative-menu-animations',
+                  name: 'Creative-menu-animations',
+                  component: () => import('@/views/app/pages/css/Creative-menu-animations'),
+                },
               ],
             },
             {
