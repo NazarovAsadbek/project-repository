@@ -104,6 +104,11 @@ const router = new Router({
                   name: 'Dvd-logo-animation',
                   component: () => import('@/views/app/pages/css/Dvd-logo-animation'),
                 },
+                {
+                  path: 'social-media',
+                  name: 'Glowing-social-media-icons',
+                  component: () => import('@/views/app/pages/css/Glowing-social-media-icons'),
+                },
               ],
             },
             {

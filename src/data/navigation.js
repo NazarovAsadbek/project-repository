@@ -75,6 +75,11 @@ export const items = [
         icon: 'mdi-circle-medium',
         to: 'dvd-background',
       },
+      {
+        title: 'Glowing social media',
+        icon: 'mdi-circle-medium',
+        to: 'social-media',
+      },
     ],
   },
 
