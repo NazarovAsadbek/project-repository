@@ -65,6 +65,11 @@ export const items = [
         icon: 'mdi-circle-medium',
         to: 'Rocket-animation',
       },
+      {
+        title: 'Custom checkbox',
+        icon: 'mdi-circle-medium',
+        to: 'coffee-checkbox',
+      },
     ],
   },
 

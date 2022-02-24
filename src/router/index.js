@@ -94,6 +94,11 @@ const router = new Router({
                   name: 'Rocket-animation',
                   component: () => import('@/views/app/pages/css/Rocket-animation'),
                 },
+                {
+                  path: 'coffee-checkbox',
+                  name: 'Awesome-coffee-checkbox',
+                  component: () => import('@/views/app/pages/css/Awesome-coffee-checkbox'),
+                },
               ],
             },
             {
