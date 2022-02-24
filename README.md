@@ -6,7 +6,7 @@ yarn install
 yarn serve
 ```
 
-## Project setup Via Yarn
+## Build project 
 ```
 yarn build
 ```
