@@ -1,5 +1,4 @@
-# project-repository
-Awesome html,css,javascript elements
+# Awesome html,css,javascript elements
 
 ## This course consists of 5 modules:
 
