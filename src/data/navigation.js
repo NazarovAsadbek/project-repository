@@ -70,6 +70,11 @@ export const items = [
         icon: 'mdi-circle-medium',
         to: 'coffee-checkbox',
       },
+      {
+        title: 'Dvd logo animation',
+        icon: 'mdi-circle-medium',
+        to: 'dvd-background',
+      },
     ],
   },
 

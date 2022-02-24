@@ -99,6 +99,11 @@ const router = new Router({
                   name: 'Awesome-coffee-checkbox',
                   component: () => import('@/views/app/pages/css/Awesome-coffee-checkbox'),
                 },
+                {
+                  path: 'dvd-background',
+                  name: 'Dvd-logo-animation',
+                  component: () => import('@/views/app/pages/css/Dvd-logo-animation'),
+                },
               ],
             },
             {
