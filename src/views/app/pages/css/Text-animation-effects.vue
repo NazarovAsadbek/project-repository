@@ -1,8 +1,8 @@
 <template>
   <div class="mainContent">
     <div class="pageBody">
-      <div>
-        <v-text-field placeholder="Your name" v-model="guestFirstname" style="width: 30%;" />
+      <div v-if="$vuetify.breakpoint.xl || $vuetify.breakpoint.lg || $vuetify.breakpoint.md">
+        <v-text-field placeholder="Your name" v-model="guestFirstname" style="width: 30%;"/>
         <h2>
           <span style="--i:1;">W</span>
           <span style="--i:2;">e</span>
@@ -39,6 +39,13 @@
           <span v-show="guestFirstname.length == 0" style="--i:10;">o</span>
           <span v-show="guestFirstname.length == 0" style="--i:11;">r</span>
         </h2>
+      </div>
+      <div style="display: flex; align-content: center; justify-content: center; max-width: 400px; margin: 0 auto;"
+           v-else
+      >
+        <h1 style="max-width: 600px">
+          This page is available only for the web version.
+        </h1>
       </div>
     </div>
   </div>
