@@ -3,25 +3,38 @@ export const items = [
     title: 'HTML',
     icon: 'mdi-language-html5',
     color: 'deep-orange',
-    group: 'pages',
+    group: 'pages/html',
     children: [
       {
-        title: 'Blank Page',
+        title: 'Glowing social media',
         icon: 'mdi-circle-medium',
-        to: 'blank',
+        to: 'social-media',
       },
-      // {
-      //   title: "Projects",
-      //   group: "pages/projects",
-      //   // icon: 'mdi-view-dashboard',
-      //   children: [
-      //     {
-      //       title: "Overview",
-      //       icon: "mdi-circle-medium",
-      //       to: "overview"
-      //     }
-      //   ]
-      // },
+      {
+        title: 'Custom checkbox',
+        icon: 'mdi-circle-medium',
+        to: 'coffee-checkbox',
+      },
+      {
+        title: 'Awesome dots',
+        icon: 'mdi-circle-medium',
+        to: 'Awesome-dots',
+      },
+      {
+        title: 'Vanila circular menu',
+        icon: 'mdi-circle-medium',
+        to: 'animated-circular-menu-vanilla',
+      },
+      {
+        title: 'Email vanila input',
+        icon: 'mdi-circle-medium',
+        to: 'Email-vanila-form',
+      },
+      {
+        title: 'Custom checkbox list',
+        icon: 'mdi-circle-medium',
+        to: 'Custom-checkbox-list',
+      },
     ],
   },
   {
@@ -46,39 +59,14 @@ export const items = [
         to: 'Claymorphism-login-form',
       },
       {
-        title: 'Email vanila input',
-        icon: 'mdi-circle-medium',
-        to: 'Email-vanila-form',
-      },
-      {
-        title: 'Awesome dots',
-        icon: 'mdi-circle-medium',
-        to: 'Awesome-dots',
-      },
-      {
-        title: 'Vanila circular menu',
-        icon: 'mdi-circle-medium',
-        to: 'animated-circular-menu-vanilla',
-      },
-      {
         title: 'Rocket animation',
         icon: 'mdi-circle-medium',
         to: 'Rocket-animation',
       },
       {
-        title: 'Custom checkbox',
-        icon: 'mdi-circle-medium',
-        to: 'coffee-checkbox',
-      },
-      {
         title: 'Dvd logo animation',
         icon: 'mdi-circle-medium',
         to: 'dvd-background',
-      },
-      {
-        title: 'Glowing social media',
-        icon: 'mdi-circle-medium',
-        to: 'social-media',
       },
     ],
   },

@@ -45,7 +45,6 @@ const router = new Router({
         //   path: "layout/:layout",
         //   component: () => import("@/views/app/Index")
         // },
-
         {
           path: '/app/pages',
           component: () => import('@/views/app/pages/Pages'),
@@ -55,15 +54,47 @@ const router = new Router({
               component: () => import('@/views/app/pages/Blank'),
             },
             {
-              path: 'css',
-              component: () => import('@/views/app/pages/css/index'),
-              redirect: '/app/pages/css/neumorphism-css-clock',
+              path: 'html',
+              component: () => import('@/views/app/pages/html/index'),
+              redirect: '/app/pages/html/social-media',
               children: [
                 {
                   path: 'animated-circular-menu-vanilla',
                   name: 'Animated-circular-menu-vanilla',
-                  component: () => import('@/views/app/pages/css/Animated-circular-menu-vanilla'),
+                  component: () => import('@/views/app/pages/html/Animated-circular-menu-vanilla'),
                 },
+                {
+                  path: 'social-media',
+                  name: 'Glowing-social-media-icons',
+                  component: () => import('@/views/app/pages/html/Glowing-social-media-icons'),
+                },
+                {
+                  path: 'awesome-dots',
+                  name: 'Awesome-dots',
+                  component: () => import('@/views/app/pages/html/Awesome-dots'),
+                },
+                {
+                  path: 'coffee-checkbox',
+                  name: 'Awesome-coffee-checkbox',
+                  component: () => import('@/views/app/pages/html/Awesome-coffee-checkbox'),
+                },
+                {
+                  path: 'email-vanila-form',
+                  name: 'Email-vanila-form',
+                  component: () => import('@/views/app/pages/html/Email-vanila-form'),
+                },
+                {
+                  path: 'custom-checkbox-list',
+                  name: 'Custom-checkbox-list',
+                  component: () => import('@/views/app/pages/html/Custom-checkbox-list'),
+                },
+              ],
+            },
+            {
+              path: 'css',
+              component: () => import('@/views/app/pages/css/index'),
+              redirect: '/app/pages/css/neumorphism-css-clock',
+              children: [
                 {
                   path: 'claymorphism-css-elements',
                   name: 'Claymorphism-css-elements',
@@ -73,16 +104,6 @@ const router = new Router({
                   path: 'claymorphism-login-form',
                   name: 'Claymorphism-login-form',
                   component: () => import('@/views/app/pages/css/Claymorphism-login-form'),
-                },
-                {
-                  path: 'awesome-dots',
-                  name: 'Awesome-dots',
-                  component: () => import('@/views/app/pages/css/Awesome-dots'),
-                },
-                {
-                  path: 'email-vanila-form',
-                  name: 'Email-vanila-form',
-                  component: () => import('@/views/app/pages/css/Email-vanila-form'),
                 },
                 {
                   path: 'neumorphism-css-clock',
@@ -95,19 +116,9 @@ const router = new Router({
                   component: () => import('@/views/app/pages/css/Rocket-animation'),
                 },
                 {
-                  path: 'coffee-checkbox',
-                  name: 'Awesome-coffee-checkbox',
-                  component: () => import('@/views/app/pages/css/Awesome-coffee-checkbox'),
-                },
-                {
                   path: 'dvd-background',
                   name: 'Dvd-logo-animation',
                   component: () => import('@/views/app/pages/css/Dvd-logo-animation'),
-                },
-                {
-                  path: 'social-media',
-                  name: 'Glowing-social-media-icons',
-                  component: () => import('@/views/app/pages/css/Glowing-social-media-icons'),
                 },
               ],
             },
