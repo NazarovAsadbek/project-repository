@@ -38,7 +38,7 @@ const router = new Router({
       path: '/',
       component: () => import('@/views/app/Index'),
       // beforeEnter: authenticate,
-      redirect: '/app/pages/html/ocean-video-background',
+      redirect: '/app/pages/js/Magic-menu-indicator',
 
       children: [
         // {
