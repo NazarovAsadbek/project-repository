@@ -14,6 +14,22 @@
       <!-- -->
     </side-bar>
 
+    <div class="main-burger-menu" v-if="!getThemeMode.verticalCompactSidebarDrawer">
+      <v-tooltip bottom>
+        <template v-slot:activator="{ on, attrs }">
+          <v-icon
+            dark
+            v-bind="attrs"
+            v-on="on"
+            @click="getThemeMode.verticalCompactSidebarDrawer = !getThemeMode.verticalCompactSidebarDrawer"
+          >
+            mdi-menu
+          </v-icon>
+        </template>
+        <span>Tooltip</span>
+      </v-tooltip>
+    </div>
+
     <!-- Sizes your content based upon application components -->
 
     <base-view/>

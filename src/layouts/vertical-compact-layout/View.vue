@@ -11,14 +11,14 @@
       color="primary"
       type="table-heading, list-item-two-line,list-item-two-line, image, table-tfoot,list-item-avatar-three-line, image, article,table-heading, list-item-two-line,list-item-two-line, image, table-tfoot,list-item-avatar-three-line, image, article"
     ></v-skeleton-loader>
-<!--    <v-container class="pa-0 ma-0" v-else>-->
+    <!--    <v-container class="pa-0 ma-0" v-else>-->
     <div class="pa-0 ma-0" v-else>
       <!-- If using vue-router -->
       <v-expand-transition mode="out-in">
         <router-view/>
       </v-expand-transition>
     </div>
-<!--    </v-container>-->
+    <!--    </v-container>-->
     <div class="flex-grow-1"></div>
   </v-main>
 </template>
