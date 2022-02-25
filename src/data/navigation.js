@@ -6,6 +6,11 @@ export const items = [
     group: 'pages/html',
     children: [
       {
+        title: 'Awesome landing main page',
+        icon: 'mdi-circle-medium',
+        to: 'ocean-video-background',
+      },
+      {
         title: 'Glowing social media',
         icon: 'mdi-circle-medium',
         to: 'social-media',

@@ -38,7 +38,7 @@ const router = new Router({
       path: '/',
       component: () => import('@/views/app/Index'),
       // beforeEnter: authenticate,
-      redirect: '/app/pages/css/neumorphism-css-clock',
+      redirect: '/app/pages/html/ocean-video-background',
 
       children: [
         // {
@@ -56,8 +56,13 @@ const router = new Router({
             {
               path: 'html',
               component: () => import('@/views/app/pages/html/index'),
-              redirect: '/app/pages/html/social-media',
+              redirect: '/app/pages/html/ocean-video-background',
               children: [
+                {
+                  path: 'ocean-video-background',
+                  name: 'Ocean-video-background',
+                  component: () => import('@/views/app/pages/html/Ocean-video-background'),
+                },
                 {
                   path: 'animated-circular-menu-vanilla',
                   name: 'Animated-circular-menu-vanilla',
