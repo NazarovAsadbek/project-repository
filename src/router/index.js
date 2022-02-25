@@ -120,6 +120,11 @@ const router = new Router({
                   name: 'Dvd-logo-animation',
                   component: () => import('@/views/app/pages/css/Dvd-logo-animation'),
                 },
+                {
+                  path: 'text-animation-effects',
+                  name: 'Text-animation-effects',
+                  component: () => import('@/views/app/pages/css/Text-animation-effects'),
+                },
               ],
             },
             {

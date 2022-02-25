@@ -68,6 +68,11 @@ export const items = [
         icon: 'mdi-circle-medium',
         to: 'dvd-background',
       },
+      {
+        title: 'Text animation effects',
+        icon: 'mdi-circle-medium',
+        to: 'text-animation-effects',
+      },
     ],
   },
 
