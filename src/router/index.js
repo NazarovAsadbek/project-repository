@@ -38,7 +38,7 @@ const router = new Router({
       path: '/',
       component: () => import('@/views/app/Index'),
       // beforeEnter: authenticate,
-      redirect: '/app/pages/js/Magic-menu-indicator',
+      redirect: '/app/pages/html/halloween-landing',
 
       children: [
         // {
@@ -56,12 +56,17 @@ const router = new Router({
             {
               path: 'html',
               component: () => import('@/views/app/pages/html/index'),
-              redirect: '/app/pages/html/ocean-video-background',
+              redirect: '/app/pages/html/halloween-landing',
               children: [
                 {
                   path: 'ocean-video-background',
                   name: 'Ocean-video-background',
                   component: () => import('@/views/app/pages/html/Ocean-video-background'),
+                },
+                {
+                  path: 'halloween-landing',
+                  name: 'Halloween-landing',
+                  component: () => import('@/views/app/pages/html/Halloween-landing'),
                 },
                 {
                   path: 'animated-circular-menu-vanilla',
