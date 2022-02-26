@@ -15,7 +15,7 @@
       floating
       height="100vh"
       :right="$vuetify.rtl"
-      style="z-index: 1002"
+      style="z-index: 100001"
     >
       <v-row class="fill-height flex-row flex ma-0" no-gutters>
         <v-card
