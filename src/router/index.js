@@ -130,6 +130,11 @@ const router = new Router({
                   name: 'Text-animation-effects',
                   component: () => import('@/views/app/pages/css/Text-animation-effects'),
                 },
+                {
+                  path: 'creative-page-scrolling-effects',
+                  name: 'Creative-page-scrolling-effects',
+                  component: () => import('@/views/app/pages/css/Creative-page-scrolling-effects'),
+                },
               ],
             },
             {

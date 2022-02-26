@@ -78,6 +78,11 @@ export const items = [
         icon: 'mdi-circle-medium',
         to: 'text-animation-effects',
       },
+      {
+        title: 'Creative page scrolling',
+        icon: 'mdi-circle-medium',
+        to: 'creative-page-scrolling-effects',
+      },
     ],
   },
 
