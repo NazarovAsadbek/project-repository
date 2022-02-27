@@ -16,6 +16,11 @@ export const items = [
         to: 'ocean-video-background',
       },
       {
+        title: 'Simple admin dashboard',
+        icon: 'mdi-circle-medium',
+        to: 'simple-admin-dashboard',
+      },
+      {
         title: 'Glowing social media',
         icon: 'mdi-circle-medium',
         to: 'social-media',

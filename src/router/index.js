@@ -69,6 +69,11 @@ const router = new Router({
                   component: () => import('@/views/app/pages/html/Halloween-landing'),
                 },
                 {
+                  path: 'simple-admin-dashboard',
+                  name: 'Simple-admin-dashboard',
+                  component: () => import('@/views/app/pages/html/Simple-admin-dashboard'),
+                },
+                {
                   path: 'animated-circular-menu-vanilla',
                   name: 'Animated-circular-menu-vanilla',
                   component: () => import('@/views/app/pages/html/Animated-circular-menu-vanilla'),
