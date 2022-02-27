@@ -11,9 +11,7 @@
           </a>
         </li>
         <li style="--i:1;">
-          <a href="#">
-            <ion-icon name="home-outline"></ion-icon>
-          </a>
+          <a href="#"> <ion-icon name="home-outline"></ion-icon> </a>
         </li>
         <li style="--i:2;">
           <a href="#">
@@ -50,30 +48,29 @@
   </div>
 </template>
 
-
 <script>
-  export default {
-    name: 'Animated-circular-menu-vanilla',
+export default {
+  name: "Animated-circular-menu-vanilla",
 
-    data: () => ({}),
-    mounted () {
-      let toggle = document.querySelector('.toggle'),
-        menu = document.querySelector('.menu')
-      toggle.onclick = function () {
-        menu.classList.toggle('active')
-      }
-    },
+  data: () => ({}),
+  mounted() {
+    let toggle = document.querySelector(".toggle"),
+      menu = document.querySelector(".menu");
+    toggle.onclick = function() {
+      menu.classList.toggle("active");
+    };
   }
+};
 </script>
 
 <style scoped lang="css">
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 
 .mainContent {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .pageBody {
@@ -122,7 +119,7 @@
 }
 
 .menu li a:hover {
-  color: #ff1252
+  color: #ff1252;
 }
 
 .toggle {
