@@ -70,7 +70,18 @@ export default {
   name: "Awesome-coffee-checkbox",
 
   data: () => ({}),
-  mounted() {}
+  mounted() {
+    let list = document.querySelectorAll(".navigation li");
+    function activeLink() {
+      list.forEach(item => {
+        item.classList.remove("hovered");
+        this.classList.add("hovered");
+      });
+    }
+    list.forEach(item => {
+      item.addEventListener("mouseover", activeLink);
+    });
+  }
 };
 </script>
 
@@ -81,7 +92,7 @@ export default {
 }
 .navigation {
   position: fixed;
-  width: 300px; 
+  width: 300px;
   height: 100%;
   background: var(--blueSimpleAdmin);
   border-left: 10px solid var(--blueSimpleAdmin);
@@ -101,7 +112,8 @@ export default {
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }
-.navigation ul li:hover {
+.navigation ul li:hover,
+.navigation ul li.hovered {
   background: var(--whiteSimpleAdmin);
 }
 .navigation ul li:nth-child(1) {
@@ -116,7 +128,8 @@ export default {
   text-decoration: none;
   color: var(--whiteSimpleAdmin);
 }
-.navigation ul li:hover a {
+.navigation ul li:hover a,
+.navigation ul li.hovered a {
   color: var(--blueSimpleAdmin);
 }
 .navigation ul li a .icon {
@@ -139,7 +152,8 @@ export default {
   text-align: start;
   white-space: nowrap;
 }
-.navigation ul li:hover a::before {
+.navigation ul li:hover a::before,
+.navigation ul li.hovered a::before {
   content: "";
   position: absolute;
   top: -50px;
@@ -151,7 +165,8 @@ export default {
   box-shadow: 35px 35px 0 10px var(--whiteSimpleAdmin);
   pointer-events: none;
 }
-.navigation ul li:hover a::after {
+.navigation ul li:hover a::after,
+.navigation ul li.hovered a::after {
   content: "";
   position: absolute;
   bottom: -50px;
