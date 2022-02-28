@@ -3,19 +3,19 @@
     <div class="navigation">
       <ul>
         <li>
-          <a href="">
+          <a href="#">
             <span class="icon"><ion-icon name="logo-apple"></ion-icon></span>
             <span class="title">Brand Name</span>
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="#">
             <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
             <span class="title">Dashboard</span>
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="#">
             <span class="icon">
               <ion-icon name="people-outline"></ion-icon>
             </span>
@@ -23,7 +23,7 @@
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="#">
             <span class="icon">
               <ion-icon name="chatbubble-outline"></ion-icon>
             </span>
@@ -31,13 +31,13 @@
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="#">
             <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
             <span class="title">Help</span>
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="#">
             <span class="icon"
             ><ion-icon name="settings-outline"></ion-icon
             ></span>
@@ -45,7 +45,7 @@
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="#">
             <span class="icon">
               <ion-icon name="lock-closed-outline"></ion-icon>
             </span>
@@ -53,7 +53,7 @@
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="#">
             <span class="icon"
             ><ion-icon name="log-out-outline"></ion-icon
             ></span>
@@ -121,9 +121,117 @@
           </div>
         </div>
       </div>
+
+      <!--      data list-->
+      <div class="adminDetails">
+        <div class="recetOrders">
+          <div class="cardHeader">
+            <h2>Recent orders</h2>
+            <a href="#" class="adminBtn">View All</a>
+          </div>
+          <table>
+            <thead>
+            <tr>
+              <td>Name</td>
+              <td>Price</td>
+              <td>Payment</td>
+              <td>Status</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Star Refrigerator</td>
+              <td>$1200</td>
+              <td>Paid</td>
+              <td><span class="adminStatus adminDelivered">Delivered</span></td>
+            </tr>
+            <tr>
+              <td>Window Coolers</td>
+              <td>$110</td>
+              <td>Due</td>
+              <td><span class="adminStatus adminPending">Pending</span></td>
+            </tr>
+            <tr>
+              <td>Speakers</td>
+              <td>$620</td>
+              <td>Paid</td>
+              <td><span class="adminStatus adminReturn">Return</span></td>
+            </tr>
+            <tr>
+              <td>HP Laptop</td>
+              <td>$11000</td>
+              <td>Due</td>
+              <td><span class="adminStatus delivered">Delivered</span></td>
+            </tr>
+            <tr>
+              <td>Apple Watch</td>
+              <td>$1200</td>
+              <td>Paid</td>
+              <td><span class="adminStatus adminPending">Pending</span></td>
+            </tr>
+            <tr>
+              <td>Wall Fan</td>
+              <td>$119</td>
+              <td>Paid</td>
+              <td><span class="adminStatus adminPending">Pending</span></td>
+            </tr>
+            <tr>
+              <td>Adidas Shoes</td>
+              <td>$740</td>
+              <td>Paid</td>
+              <td><span class="adminStatus adminReturn">Return</span></td>
+            </tr>
+            <tr>
+              <td>Denim Shoes</td>
+              <td>$110</td>
+              <td>Due</td>
+              <td><span class="adminStatus adminInProgress">In Progress</span></td>
+            </tr>
+            <tr>
+              <td>Casual Shoes</td>
+              <td>$575</td>
+              <td>Paid</td>
+              <td><span class="adminStatus adminPending">Pending</span></td>
+            </tr>
+            <tr>
+              <td>Wall Fan</td>
+              <td>$110</td>
+              <td>Paid</td>
+              <td><span class="adminStatus adminPending">Pending</span></td>
+            </tr>
+            <tr>
+              <td>Denim Shirts</td>
+              <td>$110</td>
+              <td>Due</td>
+              <td><span class="adminStatus adminInProgress">In Progress</span></td>
+            </tr>
+            <tr>
+              <td>Star Refrigerator</td>
+              <td>$1200</td>
+              <td>Paid</td>
+              <td><span class="adminStatus delivered">Delivered</span></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--        New Customers-->
+        <div class="adminRecentCustomers">
+          <div class="cardHeader">
+            <h2>Recent Customers</h2>
+          </div>
+          <table>
+            <tr>
+              <td>
+                <div class="adminImgBx"><img src="@/assets/images/img2.jpg" alt="Avatar"></div>
+              </td>
+              <td><h4>David <br> <span>Italy</span></h4></td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+
     </div>
-
-
   </div>
 </template>
 
@@ -199,7 +307,7 @@
 
 .navigation ul li:hover,
 .navigation ul li.hovered {
-  background: var(--black3SimpleAdmin);
+  background: var(--whiteSimpleAdmin);
 }
 
 .navigation ul li:nth-child(1) {
@@ -254,7 +362,7 @@
   height: 50px;
   background: transparent;
   border-radius: 50%;
-  box-shadow: 35px 35px 0 10px var(--black3SimpleAdmin);
+  box-shadow: 35px 35px 0 10px var(--whiteSimpleAdmin);
   pointer-events: none;
 }
 
@@ -268,17 +376,18 @@
   height: 50px;
   background: transparent;
   border-radius: 50%;
-  box-shadow: 35px -35px 0 10px var(--black3SimpleAdmin);
+  box-shadow: 35px -35px 0 10px var(--whiteSimpleAdmin);
   pointer-events: none;
 }
 
 /* main */
 .adminMain {
-  position: absolute;
+  position: relative;
   width: calc(100% - 300px);
   left: 300px;
   min-height: 100vh;
   transition: 0.5s;
+  background: var(--whiteSimpleAdmin);
 }
 
 .adminMain.active {
@@ -305,7 +414,7 @@
   align-items: center;
   font-size: 2.5em;
   cursor: pointer;
-  color: var(--whiteSimpleAdmin)
+  color: var(--black1SimpleAdmin)
 }
 
 .adminSearch {
@@ -368,13 +477,13 @@
 
 .adminCardBox .adminCard {
   position: relative;
-  background: var(--black3SimpleAdmin);
+  background: var(--whiteSimpleAdmin);
   padding: 30px;
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  box-shadow: 0 7px 24px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 7px 25px rgba(0, 0, 0, .08);
 }
 
 .adminCardBox .adminCard .adminNumbers {
@@ -404,4 +513,117 @@
 .adminCardBox .adminCard:hover .iconBox {
   color: var(--blueSimpleAdmin)
 }
+
+.adminDetails {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 30px;
+  margin-top: 10px;
+}
+
+.adminDetails .recetOrders {
+  position: relative;
+  display: grid;
+  min-height: 500px;
+  background: var(--whiteSimpleAdmin);
+  padding: 20px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, .08);
+  border-radius: 20px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cardHeader h2 {
+  font-width: 600;
+  color: var(--blueSimpleAdmin);
+}
+
+.adminBtn {
+  position: relative;
+  padding: 5px 10px;
+  background: var(--blueSimpleAdmin);
+  text-decoration: none;
+  color: var(--whiteSimpleAdmin);
+  border-radius: 6px;
+}
+
+.adminDetails table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.adminDetails table thead td {
+  font-weight: 600;
+}
+
+.adminDetails .recetOrders table tr {
+  color: var(--black1SimpleAdmin);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.adminDetails .recetOrders table tr:last-child {
+  border-bottom: none;
+}
+
+.adminDetails .recetOrders table tbody tr:hover {
+  background: var(--blueSimpleAdmin);
+  color: var(--whiteSimpleAdmin);
+}
+
+.adminDetails .recetOrders table tr td {
+  padding: 10px;
+}
+
+.adminDetails .recetOrders table tr td:last-child {
+  text-align: end;
+}
+
+.adminDetails .recetOrders table tr td:nth-child(2) {
+  text-align: end;
+}
+
+.adminDetails .recetOrders table tr td:nth-child(3) {
+  text-align: center;
+}
+
+.adminStatus.adminDelivered {
+  padding: 2px 4px;
+  background: #8de02c;
+  color: var(--whiteSimpleAdmin);
+  border-radius: 14px;
+  font-weight: 500;
+}
+
+.adminStatus.adminPending {
+  padding: 2px 4px;
+  background: #f9ca3f;
+  color: var(--whiteSimpleAdmin);
+  border-radius: 14px;
+  font-weight: 500;
+}
+
+.adminStatus.adminReturn {
+  padding: 2px 4px;
+  background: #f00;
+  color: var(--whiteSimpleAdmin);
+  border-radius: 14px;
+  font-weight: 500;
+}
+
+.adminStatus.adminInProgress {
+  padding: 2px 4px;
+  background: #1795ce;
+  color: var(--whiteSimpleAdmin);
+  border-radius: 14px;
+  font-weight: 500;
+}
+
 </style>
