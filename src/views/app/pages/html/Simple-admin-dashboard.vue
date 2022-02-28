@@ -226,6 +226,42 @@
               </td>
               <td><h4>David <br> <span>Italy</span></h4></td>
             </tr>
+            <tr>
+              <td>
+                <div class="adminImgBx"><img src="@/assets/images/img3.jpg" alt="Avatar"></div>
+              </td>
+              <td><h4>Muhammad <br> <span>India</span></h4></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="adminImgBx"><img src="@/assets/images/img4.jpg" alt="Avatar"></div>
+              </td>
+              <td><h4>Amelia <br> <span>France</span></h4></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="adminImgBx"><img src="@/assets/images/img5.jpg" alt="Avatar"></div>
+              </td>
+              <td><h4>Olivia <br> <span>USA</span></h4></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="adminImgBx"><img src="@/assets/images/img6.jpg" alt="Avatar"></div>
+              </td>
+              <td><h4>Amit <br> <span>Japan</span></h4></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="adminImgBx"><img src="@/assets/images/img7.jpg" alt="Avatar"></div>
+              </td>
+              <td><h4>Ashraf <br> <span>India</span></h4></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="adminImgBx"><img src="@/assets/images/img8.jpg" alt="Avatar"></div>
+              </td>
+              <td><h4>Diana <br> <span>Russia</span></h4></td>
+            </tr>
           </table>
         </div>
 
@@ -271,7 +307,6 @@
 <style scoped lang="css">
 .adminContainer {
   position: relative;
-  background: red !important;
   width: 100%;
 }
 
@@ -626,4 +661,132 @@
   font-weight: 500;
 }
 
+.adminRecentCustomers {
+  position: relative;
+  display: grid;
+  min-height: 500px;
+  padding: 20px;
+  background: var(--whiteSimpleAdmin);
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+}
+
+.adminRecentCustomers .adminImgBx {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  color: #000;
+}
+
+.adminRecentCustomers .adminImgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.adminRecentCustomers table tr td {
+  padding: 12px 10px;
+}
+
+.adminRecentCustomers table tr td h4 {
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
+.adminRecentCustomers table tr td h4 span {
+  font-size: 14px;
+  color: var(--black2SimpleAdmin)
+}
+
+.adminRecentCustomers table tr:hover {
+  background: var(--blueSimpleAdmin);
+  color: var(--whiteSimpleAdmin)
+}
+
+.adminRecentCustomers table tr:hover td h4 {
+  color: var(--whiteSimpleAdmin)
+}
+
+.adminRecentCustomers table tr:hover td h4 span {
+  color: var(--whiteSimpleAdmin)
+}
+
+/*responsive design*/
+@media (max-width: 991px) {
+  .navigation {
+    left: -300px;
+  }
+
+  .navigation.active {
+    width: 300px;
+    left: 0;
+  }
+
+  .adminMain {
+    width: 100%;
+    left: 0;
+  }
+
+  .adminMain.active {
+    left: 300px;
+  }
+
+  .adminCardBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .adminDetails {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .recetOrders {
+    overflow-x: auto;
+  }
+
+  .adminStatus.adminInProgress {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .adminCardBox {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cardHeader h2 {
+    font-size: 20px;
+  }
+
+  .adminUser {
+    min-width: 40px;
+  }
+
+  .navigation {
+    width: 100%;
+    left: -100%;
+    z-index: 1000;
+  }
+
+  .navigation.active {
+    width: 100%;
+    left: 0;
+  }
+
+  .adminToggle {
+    z-index: 1001;
+  }
+
+  .adminMain.active .adminToggle {
+    color: #fff;
+  }
+}
 </style>
