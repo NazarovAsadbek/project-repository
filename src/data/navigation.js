@@ -50,6 +50,11 @@ export const items = [
         icon: 'mdi-circle-medium',
         to: 'Custom-checkbox-list',
       },
+      {
+        title: 'Country text animation',
+        icon: 'mdi-circle-medium',
+        to: 'creative-text-country-animation',
+      },
     ],
   },
   {

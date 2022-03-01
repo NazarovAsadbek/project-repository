@@ -103,6 +103,11 @@ const router = new Router({
                   name: 'Custom-checkbox-list',
                   component: () => import('@/views/app/pages/html/Custom-checkbox-list'),
                 },
+                {
+                  path: 'creative-text-country-animation',
+                  name: 'Creative-text-country-animation',
+                  component: () => import('@/views/app/pages/html/Creative-text-country-animation'),
+                },
               ],
             },
             {
