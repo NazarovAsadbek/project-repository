@@ -11,12 +11,12 @@ export const items = [
         to: 'halloween-landing',
       },
       {
-        title: 'Awesome landing main page',
+        title: 'Awesome landing',
         icon: 'mdi-circle-medium',
         to: 'ocean-video-background',
       },
       {
-        title: 'Simple admin dashboard',
+        title: 'Simple admin',
         icon: 'mdi-circle-medium',
         to: 'simple-admin-dashboard',
       },
